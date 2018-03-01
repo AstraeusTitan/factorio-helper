@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
 # Using Kickstart as a CSS Framework
-gem 'kickstart_rails'
+gem 'bootstrap-sass'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
