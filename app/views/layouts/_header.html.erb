@@ -4,10 +4,10 @@
     <a href="#" class="navbar-brand">Logo</a>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item <%= set_active_nav_item home_path %>">
-        <a href="#" class="nav-link">Home</a>
+        <a href="<%= home_url %>" class="nav-link">Home</a>
       </li>
-      <li class="nav-item <%= set_active_nav_item %>">
-        <a href="#" class="nav-link">Sign Up</a>
+      <li class="nav-item <%= set_active_nav_item signup_path %>">
+        <a href="<%= signup_url %>" class="nav-link">Sign Up</a>
       </li>
       <li class="nav-item <%= set_active_nav_item %>">
         <a href="#" class="nav-link">Log In</a>
