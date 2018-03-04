@@ -11,13 +11,16 @@
 
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
+    <div class="container-fluid">
+      <!-- Flash Messages -->
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
+      <!-- Page Content -->
       <%= yield %>
     </div>
     <%= render 'layouts/footer' %>
+    <!-- Debug Print -->
     <div class="container debug_print">
       <h3>Params:</h3>
       <%= debug(params) if Rails.env.development? %>
