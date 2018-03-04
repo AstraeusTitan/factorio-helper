@@ -6,10 +6,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test 'should get home' do
-    get home_path
+  test 'should get welcome' do
+    get welcome_path
     assert_response :success
-    assert_select 'title', 'Home | Factorio Helper'
+    assert_select 'title', 'Welcome | Factorio Helper'
   end
 
 end
