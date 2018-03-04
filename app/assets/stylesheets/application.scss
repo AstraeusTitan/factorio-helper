@@ -11,12 +11,15 @@
  * It is generally better to create a new file per style scope.
  */
 
-/*
- * Set any custom bootstrap variables before importing bootstrap
- */
+// Set any custom bootstrap variables before importing bootstrap
 
 @import "bootstrap";
 
-/*
- * Put imports to scss files here
- */
+// Custom css
+body {
+  background-color: $gray-200
+}
+
+// Put imports to scss files here
+@import "debug";
+@import "users";
