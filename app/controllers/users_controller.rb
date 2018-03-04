@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     if @user.save
       login @user
       flash[ :success ] = 'Welcome'
-      redirect_to @user
+      redirect_to account_path
     else
       render 'new'
     end
