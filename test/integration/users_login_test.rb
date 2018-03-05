@@ -23,6 +23,10 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert is_logged_in?
     assert_template 'users/account'
-    # Add assertions for header change
+    # Confirm header changes
+    assert_select 'a[href=?]', welcome_path, count: 0
+    assert_select 'a[href=?]', signup_path, count: 0
+    assert_select 'a[href=?]', login_path, count: 0
+    assert_select "ul>li:match('class', ?)", /.dropdown/
   end
 end
