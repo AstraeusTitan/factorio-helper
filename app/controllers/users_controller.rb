@@ -4,7 +4,11 @@ class UsersController < ApplicationController
   end
 
   def account
-    @user = current_user
+    if logged_in?
+      @user = current_user
+    else
+      redirect_to login_path
+    end
   end
 
   def create
