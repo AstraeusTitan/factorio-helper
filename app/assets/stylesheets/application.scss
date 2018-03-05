@@ -20,6 +20,9 @@ body {
   background-color: $gray-200
 }
 
+.header {
+    margin-bottom: 25px;
+}
 // Put imports to scss files here
 @import "debug";
 @import "users";

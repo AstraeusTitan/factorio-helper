@@ -1,5 +1,21 @@
 <% provide :page_title, 'Welcome' %>
-<h3>What is Factorio Helper?</h3>
-<p>
-  Factorio Helper is a utility that makes dealing with Factorio recipes less painful. Start browsing recipes now or create an account to upload your own set of recipes.
-</p>
+
+<div class="row justify-content-center">
+  <div class="col-lg-6">
+    <div class="jumbotron">
+      <p class="lead">Welcome to</p>
+      <h1 class="display-4">Factorio Helper</h1>
+      <hr class="my-4">
+      <p>Something about browsing recipes</p>
+      <p class="lead">
+        <%= link_to 'Browse', '#', class: 'btn btn-primary', role: 'button' %>
+      </p>
+      <hr class="my-4">
+      <p>Something about creating an account and uploading recipes</p>
+      <p class="lead">
+        <%= link_to 'Sign Up', signup_path, class: 'btn btn-primary', role: 'button' %>
+      </p>
+      <small class="text-muted">Already have an account? <%= link_to 'Login', login_path %></small>
+    </div>
+  </div>
+</div>
