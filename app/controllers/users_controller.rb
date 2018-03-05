@@ -15,7 +15,6 @@ class UsersController < ApplicationController
     @user = User.new allowed_params
     if @user.save
       login @user
-      flash[ :success ] = 'Welcome'
       redirect_to account_path
     else
       render 'new'
