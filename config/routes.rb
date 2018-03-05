@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
   root 'static_pages#welcome'
 
   get '/welcome', to: 'static_pages#welcome'
