@@ -1,19 +1,9 @@
 <% provide :page_title, 'Account' %>
+
 <div class="row justify-content-center">
   <div class="col-lg-6">
-    <div class="row">
-      <h1>Account</h1>
-    </div>
-    <div>
-      <h3>Info</h3>
-      <h5>Email:</h5>
-      <p><%= @user.email %></p>
-    </div>
-    <div>
-      <h3>Actions</h3>
-      <div class="row">
-        <%= link_to 'Edit', account_edit_path, role: 'button', class: 'btn' %>
-      </div>
-    </div>
+    <h1>Account</h1>
+    <h4>Email:</h4>
+    <p><%= @user.email %></p>
   </div>
 </div>
