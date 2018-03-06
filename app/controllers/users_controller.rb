@@ -18,6 +18,7 @@ class UsersController < ApplicationController
       redirect_to account_path
     else
       render 'new'
+      # debugger
     end
   end
 
