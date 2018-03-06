@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def account
+  def show
     if logged_in?
       @user = current_user
     else

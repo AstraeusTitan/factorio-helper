@@ -19,7 +19,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
         password: 'secret', password_confirmation: 'secret' } }
     end
     follow_redirect!
-    assert_template 'users/account'
+    assert_template 'users/show'
     assert is_logged_in?
   end
 end

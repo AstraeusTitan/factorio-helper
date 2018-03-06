@@ -22,7 +22,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
       password_confirmation: @user.password } }
     follow_redirect!
     assert is_logged_in?
-    assert_template 'users/account'
+    assert_template 'users/show'
     # Confirm header changes
     assert_select 'a[href=?]', welcome_path, count: 0
     assert_select 'a[href=?]', signup_path, count: 0
