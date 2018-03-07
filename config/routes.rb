@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :recipes
   root 'static_pages#welcome'
 
   get '/welcome', to: 'static_pages#welcome'
