@@ -4,8 +4,26 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  name: electronic-circuit
+  amount: 3
+  input: true
+  recipe: assembler
+
+two:
+  name: iron-gear-wheel
+  amount: 5
+  input: true
+  recipe: assembler
+
+three:
+  name: iron-plate
+  amount: 9
+  input: true
+  recipe: assembler
+
+four:
+  name: assembling-machine-1
+  amount: 3
+  input: false
+  recipe: assembler
