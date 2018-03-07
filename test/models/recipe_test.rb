@@ -29,4 +29,19 @@ class RecipeTest < ActiveSupport::TestCase
     @recipe.modded = false
     assert_not @recipe.modded?
   end
+
+  test 'should be able to access ingredients' do
+    recipe = recipes :assembler
+    assert_not recipe.ingredients.empty?
+  end
+
+  test 'should return inputs' do
+    recipe = recipes :assembler
+    assert_equal recipe.inputs.size, 3
+  end
+
+  test 'should return outputs' do
+    recipe = recipes :assembler
+    assert_equal recipe.outputs.size, 1
+  end
 end
