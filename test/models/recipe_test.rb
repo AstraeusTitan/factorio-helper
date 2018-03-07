@@ -44,4 +44,26 @@ class RecipeTest < ActiveSupport::TestCase
     recipe = recipes :assembler
     assert_equal recipe.outputs.size, 1
   end
+
+  test 'should return base recipes' do
+    recipes = Recipe.base
+    assert_equal recipes.count, 1
+  end
+
+  test 'should return modded recipes' do
+    recipes = Recipe.modded
+    assert_equal recipes.count, 1
+  end
+
+  test 'should return recipes by user' do
+    recipes = Recipe.user users(:bob)
+    assert_equal recipes.count, 2
+    recipes = Recipe.user users(:dave)
+    assert_equal recipes.count, 0
+  end
+
+  test 'scopes should chain' do
+    recipes = Recipe.modded.user users(:bob)
+    assert_equal recipes.count, 1
+  end
 end
