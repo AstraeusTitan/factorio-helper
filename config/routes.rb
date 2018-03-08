@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :ingredients
-  resources :recipes
   root 'static_pages#welcome'
 
   get '/welcome', to: 'static_pages#welcome'
@@ -11,4 +9,8 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#delete'
+  get '/browse', to: 'recipes#index'
+
+  resources :ingredients
+  resources :recipes
 end
