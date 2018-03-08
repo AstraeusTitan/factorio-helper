@@ -1,0 +1,17 @@
+<% provide :page_title, @recipe.name %>
+
+<h1><%= @recipe.name %></h1>
+
+<h3>Inputs</h3>
+<ul>
+  <% @recipe.inputs.each do |input| %>
+    <li><%= input.name %>: <%= input.amount %></li>
+  <% end %>
+</ul>
+
+<h3>Outputs</h3>
+<ul>
+  <% @recipe.outputs.each do |output| %>
+    <li><%= output.name %>: <%= output.amount %></li>
+  <% end %>
+</ul>

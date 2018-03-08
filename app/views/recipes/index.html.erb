@@ -1,0 +1,9 @@
+<% provide :page_title, 'Browse' %>
+
+<h1>Recipes</h1>
+<small><%= @recipes.count %></small>
+<% @recipes.each do |recipe| %>
+  <div>
+    <h5><%= link_to recipe.name, recipe_path(recipe) %></h5>
+  </div>
+<% end %>
