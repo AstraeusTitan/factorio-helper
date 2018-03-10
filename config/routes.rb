@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#delete'
   # Recipes
   get '/browse', to: 'recipes#index'
+  post '/browse', to: 'recipes#index'
   get '/recipe/:id', to: 'recipes#show', as: :recipe
 end
