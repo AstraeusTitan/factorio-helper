@@ -1,14 +1,13 @@
-<!-- Header -->
 <div class="header">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a href="<%= logged_in? ? browse_path : welcome_path %>" class="navbar-brand">Logo</a>
+  <nav class="navbar navbar-dark navbar-expand-md flush-left fixed-top">
+    <a href="<%= welcome_path %>" class="navbar-brand lead"> Factorio Helper </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle-area" aria-controls="navbar-toggle-area" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar-toggle-area">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item <%= set_active_nav_item browse_path%>">
-          <%= link_to 'Browse', browse_path, class: 'nav-link' %>
+        <li class="nav-item">
+          <%= link_to 'Browse', browse_path, class: "nav-link #{ set_active_nav_item browse_path }" %>
         </li>
         <% if logged_in? %>
           <li class="nav-item dropdown">
@@ -21,11 +20,11 @@
             </div>
           </li>
         <% else %>
-          <li class="nav-item <%= set_active_nav_item signup_path %>">
-            <%= link_to 'Sign Up', signup_path, class: 'nav-link' %>
+          <li class="nav-item">
+            <%= link_to 'Sign Up', signup_path, class: "nav-link #{ set_active_nav_item signup_path }" %>
           </li>
-          <li class="nav-item <%= set_active_nav_item login_path %>">
-            <%= link_to 'Log In', login_path, class: 'nav-link' %>
+          <li class="nav-item">
+            <%= link_to 'Log In', login_path, class: "nav-link #{ set_active_nav_item login_path }" %>
           </li>
         <% end %>
       </ul>
