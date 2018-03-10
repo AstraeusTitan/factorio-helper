@@ -12,18 +12,19 @@
  */
 
 // Set any custom bootstrap variables before importing bootstrap
-
+@import "colors";
 @import "bootstrap";
 
-// Custom css
-body {
-  // background-color: $gray-200
+// Helpers
+.fill-parent {
+    height: 100%
 }
 
-.header {
-    margin-bottom: 25px;
-}
 // Put imports to scss files here
 @import "debug";
+@import "overides";
+@import "static_pages";
 @import "users";
 @import "sessions";
+@import "recipes";
+@import "header";

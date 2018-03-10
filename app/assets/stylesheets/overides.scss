@@ -1,0 +1,107 @@
+// Bootstrap style overides
+html, body {
+    z-index: -100;
+    height: 100%;
+    background-color: $dark-grey;
+    color: $light-grey;
+}
+
+.navbar-dark {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $dark-grey;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    .navbar-toggler {
+        border: none;
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(238,242,244,1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+
+        &:hover {
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253,112,55,1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+        }
+    }
+
+    .navbar-collapse {
+        &.show, &.collapsing {
+            .navbar-nav {
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    .navbar-brand {
+        background-image: url(/assets/logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $light-grey;
+        padding: .5rem 2rem;
+        margin: .5rem 0;
+        transition: all .15s ease-in-out;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            color: $light-grey;
+            transition: all .15s ease-in-out;
+
+            &.active, &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    &.flush-left {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+.form-control {
+    &.round {
+        border-radius: 1rem;
+    }
+
+    &.primary {
+        background-color: $blue-grey-darken-1;
+        border: 2px solid $blue-grey-lighten-1;
+        border-width: 0;
+        color: $light-grey;
+
+        &:placeholder {
+            color: $blue-grey;
+        }
+
+        &:focus{
+            border-width: 2px;
+            box-shadow: none;
+        }
+    }
+}
+
+.btn-outline-primary {
+    color: $orange;
+    border-color: $orange;
+    border-width: 2px;
+    border-radius: 1rem;
+
+    &:hover, &:disabled {
+        background-color: $orange;
+        border-color: $orange;
+        color: $light-grey;
+    }
+
+    &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
