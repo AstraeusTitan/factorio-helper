@@ -1,9 +1,45 @@
 <% provide :page_title, 'Browse' %>
 
-<h1>Recipes</h1>
-<small><%= @recipes.count %></small>
-<% @recipes.each do |recipe| %>
-  <div>
-    <h5><%= link_to recipe.name, recipe_path(recipe) %></h5>
+<div class="container">
+  <div class="row">
+    <div class="col align-self-center">
+      <div class="row">
+        <div class="col">
+          <div class="search-box card">
+            <div class="row">
+              <div class="col">
+                <h3 class="text-center">Browse</h1>
+                <%= label_tag :filter, 'Recipe filter', class: 'sr-only' %>
+                <div class="input-group">
+                  <%= text_field_tag :filter, params[ :query ], class: 'form-control round primary', placeholder: 'name, input, or output' %>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <div class="btn-group btn-group-toggle recipe-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-secondary toggle active" onclick="show_base_recipes()">
+                    <%= radio_button_tag 'recipe_type', 'base', true, class: 'form-check-input' %>Base
+                  </label>
+                  <label class="btn btn-outline-secondary toggle" onclick="show_modded_recipes()">
+                    <%= radio_button_tag 'recipe_type', 'modded', true, class: 'form-check-input' %>Modded
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row" id="base-recipes">
+            <%= render partial: 'recipe', collection: @recipes.base, cached: true %>
+          </div>
+          <div class="row" id="modded-recipes">
+            <%= render partial: 'recipe', collection: @recipes.modded, cached: true %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-<% end %>
+</div>
