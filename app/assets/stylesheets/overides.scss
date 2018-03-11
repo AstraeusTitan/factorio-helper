@@ -66,22 +66,24 @@ html, body {
 }
 
 .form-control {
+    background-color: transparent;
+    transition: all .15s ease-in-out;
+
     &.round {
-        border-radius: 1rem;
+        border-radius: 2rem;
     }
 
     &.primary {
-        background-color: $blue-grey-darken-1;
-        border: 2px solid $blue-grey-lighten-1;
-        border-width: 0;
+        border: 1px solid $blue-grey-darken-1;
         color: $light-grey;
 
         &:placeholder {
-            color: $blue-grey;
+            color: $blue-grey-darken-1;
         }
 
-        &:focus{
-            border-width: 2px;
+        &:focus, &:hover{
+            background-color: transparent;
+            border-color: $orange;
             box-shadow: none;
         }
     }
@@ -90,8 +92,8 @@ html, body {
 .btn-outline-primary {
     color: $orange;
     border-color: $orange;
-    border-width: 2px;
-    border-radius: 1rem;
+    border-width: 1px;
+    border-radius: 2rem;
 
     &:hover, &:disabled {
         background-color: $orange;
@@ -103,5 +105,36 @@ html, body {
         border: none;
         box-shadow: none;
         outline: none;
+    }
+}
+
+.btn-outline-secondary.toggle {
+    color: $blue-grey-darken-1;
+    border-color: $blue-grey-darken-1;
+    border-width: 1px;
+    border-radius: 2rem;
+    width: 6rem;
+    height: 1.5rem;
+    line-height: .5rem;
+
+    &.active, &:hover, &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        border-color: $blue-grey-darken-1 !important;
+        background-color: $blue-grey-darken-1 !important;
+        color: $light-grey !important;
+    }
+}
+
+.list-group {
+    .list-group-item, .list-group-item-action{
+        background-color: transparent;
+        border: none;
+        color: $light-grey;
+        transition: all .15s ease-in-out;
+
+        &:hover {
+            color: $orange;
+        }
     }
 }
