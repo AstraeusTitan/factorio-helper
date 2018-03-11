@@ -1,3 +1,67 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search-box {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: $dark-grey-darken-1;
+
+    .form-control {
+        margin-top: 1rem;
+        border-color: $orange;
+    }
+}
+
+.recipe-toggle {
+    padding: 2rem;
+}
+
+#modded-recipes {
+    visibility: hidden;
+}
+
+.recipe {
+    background-color: $dark-grey-darken-1;
+    margin: 1rem 0;
+
+    .header {
+        background-color: transparent;
+        color: $light-grey;
+        border: 1px solid $orange;
+        border-radius: 1rem 1rem 0 0;
+        padding: .5rem 2rem;
+        font-weight: 300;
+        font-size: 1.25rem;
+        transition: all .15s ease-in-out;
+
+        &:hover {
+            background-color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    .remove {
+        position: absolute;
+    }
+
+    .ingredient {
+        margin: .5rem 0;
+        padding: 0 2rem;
+    }
+
+    p {
+        margin: 0;
+        padding: 1rem;
+        padding-bottom: .5rem;
+    }
+}
+
+.recipe-col {
+    padding: .75rem;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
