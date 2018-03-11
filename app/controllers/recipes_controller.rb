@@ -1,10 +1,7 @@
 class RecipesController < ApplicationController
   def index
-    unless logged_in?
-      @recipes = Recipe.base
-    else
-      @recipes = Recipe.modded.user current_user
-    end
+    user = current_user
+    @recipes = Recipe.browseable_for user
   end
 
   def show
