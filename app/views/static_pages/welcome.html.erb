@@ -1,19 +1,19 @@
 <% provide :page_title, 'Welcome' %>
 <div class="container fill-parent">
   <div class="row align-items-center fill-parent">
-    <div class="col align-self-center">
+    <div class="col">
       <div class="row">
         <div class="col">
           <h1 class="welcome-message text-center lead">Welcome to Factorio Helper</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col d-flex flex-column">
+        <div class="col" data-turbolinks="false">
           <p class="text-center lead"><small>Browse recipes</small></p>
           <%= form_tag( browse_path, id: 'search-form') do %>
+            <%= label_tag :query, 'Recipe query', class: 'sr-only' %>
             <div class="input-group">
               <%= text_field_tag :query, params[ :query ], class: 'form-control round primary', placeholder: 'name, input, or output' %>
-              <%= label_tag :query, 'Recipe query', class: 'sr-only' %>
               <div class="input-group-append">
                 <%= submit_tag 'Browse', name: nil, class: 'btn btn-outline-primary' %>
               </div>
