@@ -5,9 +5,11 @@ class Recipe < ApplicationRecord
   belongs_to :user
   has_many :ingredients
 
+  default_scope { order(:name) }
   scope :base, -> { where(modded: false) }
   scope :modded, -> { where(modded: true) }
-  scope :user, -> (user) { where(user: user) }
+  scope :owned_by, -> (user) { where(user: user) }
+  scope :browseable_for, -> (user) { base.or owned_by(user) }
 
   def inputs
     ingredients.select { |i| i.input? }
