@@ -3,28 +3,50 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 @show_base_recipes = () ->
-    console.log "show base recipes"
-    $("#modded-recipes").css("visibility", "hidden")
-    $("#base-recipes").css("visibility", "visible")
+    $("#modded-recipes").addClass("d-none")
+    $("#base-recipes").removeClass("d-none")
 @show_modded_recipes = () ->
-    console.log "show modded recipes"
-    $("#base-recipes").css("visibility", "hidden")
-    $("#modded-recipes").css("visibility", "visible")
+    $("#base-recipes").addClass("d-none")
+    $("#modded-recipes").removeClass("d-none")
 filter_recipes = (filter) ->
-    # Hide any recipe that does not have the filter in the name
-    $(".recipe:not([data-name*='" + filter + "'])").not().parent().addClass("d-none")
-    # Unhide any recipe with an ingredient that has the filter in the name
-    $(".ingredient[data-name*='" + filter + "']").closest(".recipe-col").removeClass("d-none")
-
-$(document).on "keyup change", "#filter", () ->
-    console.log "keyup"
-    filter = $(this).val()
     $(".recipe").parent().removeClass("d-none")
     if filter
-        filter_recipes filter
+        # Hide any recipe that does not have the filter in the name
+        $(".recipe").not("[data-name*='" + filter + "']").parent().addClass("d-none")
+        # Unhide any recipe with an ingredient that has the filter in the name
+        $(".ingredient[data-name*='" + filter + "'][data-type*='output']").closest(".recipe-col").removeClass("d-none")
+
+recipe_calculator = (input_field) ->
+    new_value = input_field.val()
+    base_value = get_base_value(input_field)
+    ratio = new_value / base_value
+    update_fields(input_field, ratio)
+
+update_fields = (field, ratio) ->
+    inputs = $("input[type*='number']").not(field)
+    outputs = $("[id^='output']")
+    update_value(ratio, input) for input in inputs
+    update_text(ratio, output) for output in outputs
+
+update_value = (ratio, element) ->
+    base_value = get_base_value(element)
+    $(element).val((base_value * ratio).toFixed())
+
+update_text = (ratio, element) ->
+    base_value = get_base_value(element)
+    $(element).text((base_value * ratio).toFixed())
+
+get_base_value = (element) ->
+    $(element).attr("data-base-value")
+
+$(document).on "keyup change", "#filter", () ->
+    filter = $(this).val()
+    filter_recipes filter
+
+$(document).on "keyup change", "input[type='number']", () ->
+    recipe_calculator($(this))
 
 $(document).on "turbolinks:load", () ->
-    console.log "turbolinks:load"
     filter = $("#filter").val()
-    if filter
-        filter_recipes filter
+    filter_recipes filter
+
