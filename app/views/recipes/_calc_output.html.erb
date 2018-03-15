@@ -1,0 +1,11 @@
+<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center mb-2" data-turbolinks="false">
+  <span>
+    <%= form_tag( browse_path ) do %>
+      <input type="hidden" name="query" value="<%= "#{ingredient.name}" %>">
+      <%= submit_tag "#{ingredient.name}", name: nil, class: 'btn btn-outline-primary round' %>
+    <% end %>
+  </span>
+  <span id="<%= "output_#{ingredient.name}" %>" data-base-value="<%= ingredient.amount %>">
+    <%= ingredient.amount %>
+  </span>
+</li>

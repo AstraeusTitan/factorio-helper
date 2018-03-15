@@ -1,0 +1,26 @@
+<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 calc-display">
+  <div class="row">
+    <div class="col">
+      <h4 class="text-center">Want</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <%= render partial: 'calc_input', collection: recipe.outputs, as: :ingredient %>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4 class="text-center mt-3">Need</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ul class="list-group">
+        <%= render partial: 'calc_output', collection: recipe.inputs, as: :ingredient %>
+      </ul>
+    </div>
+  </div>
+</div>

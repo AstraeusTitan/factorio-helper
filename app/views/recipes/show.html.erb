@@ -1,17 +1,19 @@
 <% provide :page_title, @recipe.name %>
 
-<h1><%= @recipe.name %></h1>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card mt-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center calc-header"><%= "#{@recipe.name}" %></h1>
+          </div>
+        </div>
+        <div class="row calc-display" id="want-display">
+          <%= render partial: 'calc', locals: { recipe: @recipe } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h3>Inputs</h3>
-<ul>
-  <% @recipe.inputs.each do |input| %>
-    <li><%= input.name %>: <%= input.amount %></li>
-  <% end %>
-</ul>
-
-<h3>Outputs</h3>
-<ul>
-  <% @recipe.outputs.each do |output| %>
-    <li><%= output.name %>: <%= output.amount %></li>
-  <% end %>
-</ul>

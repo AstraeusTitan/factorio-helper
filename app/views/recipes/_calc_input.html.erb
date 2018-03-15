@@ -1,0 +1,8 @@
+<li class="list-group-item calc-input-group">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text round calc-input"><%= "#{ingredient.name}" %></span>
+    </div>
+    <%= number_field_tag "input_#{ingredient.name}", ingredient.amount, class: 'form-control round primary', step: 0.01, 'data-base-value': ingredient.amount %>
+  </div>
+</li>
