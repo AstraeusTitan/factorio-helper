@@ -1,14 +1,14 @@
-<div class="col-sm-6 recipe-col">
-  <div class="recipe card fill-parent" data-name=<%= recipe.name %>>
+<div class="col-lg-6 recipe-col">
+  <div class="recipe card fill-parent" data-name=<%= recipe.name.downcase %>>
     <%= link_to "#{recipe.name}", recipe, class: 'header' %>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <p>Inputs</p>
         <ul class="list-group">
           <%= render partial: 'ingredient', collection: recipe.inputs %>
         </ul>
       </div>
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <p>Outputs</p>
         <ul class="list-group">
           <%= render partial: 'ingredient', collection: recipe.outputs %>

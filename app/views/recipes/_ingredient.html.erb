@@ -1,4 +1,4 @@
-<li class="list-group-item list-group-item-action d-flex flex-row ingredient" data-name=<%= ingredient.name %>>
+<li class="list-group-item d-flex flex-row ingredient" data-name=<%= ingredient.name %> data-type=<%= ingredient.input? ? 'input' : 'output' %>>
   <span class="mr-auto"><%= "#{ingredient.name}" %></span>
   <span class=""><%= "#{ingredient.amount}" %></span>
 </li>

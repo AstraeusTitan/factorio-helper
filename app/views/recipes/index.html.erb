@@ -8,10 +8,10 @@
           <div class="search-box card">
             <div class="row">
               <div class="col">
-                <h3 class="text-center">Browse</h1>
+                <h1 class="text-center">Browse</h1>
                 <%= label_tag :filter, 'Recipe filter', class: 'sr-only' %>
                 <div class="input-group">
-                  <%= text_field_tag :filter, params[ :query ], class: 'form-control round primary', placeholder: 'name, input, or output' %>
+                  <%= text_field_tag :filter, params[ :query ], class: 'form-control round primary', placeholder: 'Search by name or output' %>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@
           <div class="row" id="base-recipes">
             <%= render partial: 'recipe', collection: @recipes.base, cached: true %>
           </div>
-          <div class="row" id="modded-recipes">
+          <div class="row d-none" id="modded-recipes">
             <%= render partial: 'recipe', collection: @recipes.modded, cached: true %>
           </div>
         </div>
