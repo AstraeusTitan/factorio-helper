@@ -30,11 +30,11 @@ update_fields = (field, ratio) ->
 
 update_value = (ratio, element) ->
     base_value = get_base_value(element)
-    $(element).val((base_value * ratio).toFixed())
+    $(element).val(Math.ceil(base_value * ratio))
 
 update_text = (ratio, element) ->
     base_value = get_base_value(element)
-    $(element).text((base_value * ratio).toFixed())
+    $(element).text(Math.ceil(base_value * ratio))
 
 get_base_value = (element) ->
     $(element).attr("data-base-value")
