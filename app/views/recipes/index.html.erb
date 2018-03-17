@@ -36,7 +36,23 @@
             <%= render partial: 'recipe', collection: @recipes.base, cached: true %>
           </div>
           <div class="row d-none" id="modded-recipes">
-            <%= render partial: 'recipe', collection: @recipes.modded, cached: true %>
+            <% unless @recipes.modded.empty? %>
+              <%= render partial: 'recipe', collection: @recipes.modded, cached: true %>
+            <% else %>
+              <div class="col mt-5">
+                <% if logged_in? %>
+                  <h5 class="text-center">Looks like you haven't uploaded any recipes</h5>
+                  <div class="d-flex justify-content-center">
+                    <%= link_to 'Upload', upload_path, class: 'btn btn-outline-primary round' %>
+                  </div>
+                <% else %>
+                  <h5 class="text-center">Must be logged in to view modded recipes</h5>
+                  <div class="d-flex justify-content-center">
+                    <%= link_to 'Login', login_path, class: 'btn btn-outline-primary round' %>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
