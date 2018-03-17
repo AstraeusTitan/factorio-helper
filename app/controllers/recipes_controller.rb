@@ -22,7 +22,7 @@ class RecipesController < ApplicationController
         process_file submitted_file, current_user
         render :status => 200
       rescue Exception => e
-        flash.now[ :error_message ] = e.message
+        # pass message with response
         render :status => 400
       end
     end
