@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get '/browse', to: 'recipes#index'
   post '/browse', to: 'recipes#index'
   get '/recipe/:id', to: 'recipes#show', as: :recipe
+  get '/upload', to: 'recipes#upload'
+  post '/upload', to: 'recipes#upload'
 end
