@@ -58,6 +58,9 @@ $(document).on "change", "#recipe_list", (e) ->
 
 $(document).on "ajax:send", () ->
     console.log 'sent'
+    $("#success_message").addClass("d-none")
+    $("#error_message").addClass("d-none")
+    $("#processing_message").removeClass("d-none")
     $(".message-display").removeClass("d-none")
 
 $(document).on "ajax:success", () ->
