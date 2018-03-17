@@ -5,9 +5,11 @@
 @show_base_recipes = () ->
     $("#modded-recipes").addClass("d-none")
     $("#base-recipes").removeClass("d-none")
+
 @show_modded_recipes = () ->
     $("#base-recipes").addClass("d-none")
     $("#modded-recipes").removeClass("d-none")
+
 filter_recipes = (filter) ->
     $(".recipe").parent().removeClass("d-none")
     if filter
@@ -23,7 +25,7 @@ recipe_calculator = (input_field) ->
     update_fields(input_field, ratio)
 
 update_fields = (field, ratio) ->
-    inputs = $("input[type*='number']").not(field)
+    inputs = $("input:number").not(field)
     outputs = $("[id^='output']")
     update_value(ratio, input) for input in inputs
     update_text(ratio, output) for output in outputs
@@ -50,3 +52,22 @@ $(document).on "turbolinks:load", () ->
     filter = $("#filter").val()
     filter_recipes filter
 
+$(document).on "change", "#recipe_list", (e) ->
+    $("#file_label").text(e.target.files[0].name)
+    $("input:submit").removeAttr("disabled")
+
+$(document).on "ajax:send", () ->
+    console.log 'sent'
+    $(".message-display").removeClass("d-none")
+
+$(document).on "ajax:success", () ->
+    console.log 'success_message'
+    $("#processing_message").addClass("d-none")
+    $("#error_message").addClass("d-none")
+    $("#success_message").removeClass("d-none")
+
+$(document).on "ajax:error", () ->
+    console.log 'error'
+    $("#processing_message").addClass("d-none")
+    $("#success_message").addClass("d-none")
+    $("#error_message").removeClass("d-none")

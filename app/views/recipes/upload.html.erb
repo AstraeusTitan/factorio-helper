@@ -1,0 +1,37 @@
+<% provide :page_title, 'Upload' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="upload-area card">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+            <h1 class="text-center mb-5">Upload</h1>
+            <p class="lead text-center">Select a JSON file of custom recipes to upload</p>
+            <div class="input-group">
+              <%= form_tag( { action: :upload }, multipart: true, class: 'fill-width d-flex', remote: true ) do %>
+                <div class="custom-file">
+                  <%= file_field_tag 'recipe_list', accept: '.json', class: 'custom-file-input' %>
+                  <label id="file_label" for="recipe_list" class="custom-file-label">Select file</label>
+                </div>
+                <div class="input-group-append">
+                  <%= submit_tag 'Submit', name: nil, class: 'btn btn-outline-primary custom-file-submit' %>
+                </div>
+              <% end %>
+            </div>
+            <div class="d-flex justify-content-center">
+              <small class="text-center">Note: this upload will replace any previously uploaded files</small>
+            </div>
+          </div>
+        </div>
+        <div class="row d-none message-display">
+          <div class="col">
+            <h5 class="text-center" id="processing_message">Processing...</h5>
+            <h5 class="text-center d-none" id="success_message">Upload Successful</h5>
+            <h5 class="text-center d-none" id="error_message">Something went wrong...</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
