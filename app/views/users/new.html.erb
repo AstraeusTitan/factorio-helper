@@ -1,38 +1,50 @@
 <% provide :page_title, 'Sign Up' %>
-<div class="row justify-content-center">
-  <div class="col-lg-6">
-    <h1>Sign Up</h1>
-    <%= form_for(@user, url: signup_path) do |f| %>
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, class: 'form-control' %>
-        <% unless @user.errors[ :email ].empty? %>
-          <div class="alert alert-danger">
-            <small><%= @user.errors[ :email ][ 0 ] %></small>
-          </div>
-        <% end %>
-      </div>
 
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, class: 'form-control' %>
-        <div class="<%= 'alert alert-danger' unless @user.errors[ :password ].empty? %>">
-          <small>password must be at least 6 characters</small>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="signup-area card">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+            <h1 class="text-center">Sign Up</h1>
+            <%= form_for(@user, url: signup_path) do |f| %>
+              <div class="form-group">
+                <%= f.label :email %>
+                <%= f.email_field :email, class: 'form-control round primary', placeholder: 'name@example.com' %>
+                <% unless @user.errors[ :email ].empty? %>
+                  <div class="alert alert-danger round mt-1">
+                    <small><%= @user.errors[ :email ][ 0 ] %></small>
+                  </div>
+                <% end %>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :password %>
+                <%= f.password_field :password, class: 'form-control round primary' %>
+                <div class="<%= 'alert alert-danger round mt-1' unless @user.errors[ :password ].empty? %>">
+                  <small>password must be at least 6 characters</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :password_confirmation, 'Confirmation' %>
+                <%= f.password_field :password_confirmation, class: 'form-control round primary' %>
+                <% unless @user.errors[ :password_confirmation ].empty? %>
+                  <div class="alert alert-danger round mt-1">
+                    <small>must match password</small>
+                  </div>
+                <% end %>
+              </div>
+              <div class="d-flex justify-content-center mt-4">
+                <%= f.submit "Create account", class: 'btn btn-outline-primary' %>
+              </div>
+              <div class="d-flex justify-content-center mt-2">
+                <small class="text-muted text-center">Already have an account? <%= link_to 'Login.', login_path %></small>
+              </div>
+            <% end %>
+          </div>
         </div>
       </div>
-
-      <div class="form-group">
-        <%= f.label :password_confirmation, 'Confirmation' %>
-        <%= f.password_field :password_confirmation, class: 'form-control' %>
-        <% unless @user.errors[ :password_confirmation ].empty? %>
-          <div class="alert alert-danger">
-            <small>must match password</small>
-          </div>
-        <% end %>
-      </div>
-      <%= f.submit "Create account", class: 'btn btn-primary' %>
-      <br>
-      <small class="text-muted">Already have an account? <%= link_to 'Log in.', login_path %></small>
-    <% end %>
+    </div>
   </div>
 </div>

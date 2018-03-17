@@ -1,24 +1,37 @@
 <!-- User login page -->
 <% provide :page_title, 'Log In' %>
-<div class="row justify-content-center">
-  <div class="col-lg-6">
-    <h1>Log In</h1>
-    <% if flash.now[ :danger ] %>
-      <div class="alert alert-danger"><%= flash.now[ :danger ] %></div>
-    <% end %>
-    <%= form_for :session, url: login_path do |f| %>
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, class: 'form-control' %>
-      </div>
 
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, class: 'form-control' %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="login-area card">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+            <h1 class="text-center">Login</h1>
+            <% if flash.now[ :danger ] %>
+              <div class="alert alert-danger round"><%= flash.now[ :danger ] %></div>
+            <% end %>
+            <%= form_for :session, url: login_path do |f| %>
+              <div class="form-group">
+                <%= f.label :email %>
+                <%= f.email_field :email, class: 'form-control round primary', placeholder: 'name@example.com' %>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :password %>
+                <%= f.password_field :password, class: 'form-control round primary' %>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <%= f.submit "Login", class: 'btn btn-outline-primary' %>
+              </div>
+              <div class="d-flex justify-content-center mt-2">
+                <small class="text-muted text-center">New user? <%= link_to 'Sign up.', signup_path %></small>
+              </div>
+            <% end %>
+          </div>
+        </div>
       </div>
-      <%= f.submit 'Log In', class: 'btn btn-primary' %>
-      <br>
-      <small class="muted-text">New user? <%= link_to 'Sign up.', signup_path %></small>
-    <% end %>
+    </div>
   </div>
 </div>
