@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @user = User.new allowed_params
     if @user.save
       login @user
-      redirect_to account_path
+      redirect_to browse_path
     else
       render 'new'
     end
