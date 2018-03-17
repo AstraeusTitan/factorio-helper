@@ -13,7 +13,7 @@
           <%= form_tag( browse_path, id: 'search-form') do %>
             <%= label_tag :query, 'Recipe query', class: 'sr-only' %>
             <div class="input-group">
-              <%= text_field_tag :query, params[ :query ], class: 'form-control round primary', placeholder: 'name, input, or output' %>
+              <%= text_field_tag :query, params[ :query ], class: 'form-control round primary', placeholder: 'Search by name or output' %>
               <div class="input-group-append">
                 <%= submit_tag 'Browse', name: nil, class: 'btn btn-outline-primary' %>
               </div>
