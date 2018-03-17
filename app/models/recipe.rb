@@ -3,7 +3,7 @@ class Recipe < ApplicationRecord
   validates :energy_cost, numericality: { greater_than: 0.0 }, presence: true
 
   belongs_to :user
-  has_many :ingredients
+  has_many :ingredients, dependent: :destroy
 
   default_scope { order(:name) }
   scope :base, -> { where(modded: false) }
