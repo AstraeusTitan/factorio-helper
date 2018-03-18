@@ -35,7 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.11'
 #JSON for json parsing
 gem 'json'
-
+# Use postgres for database
+gem 'pg'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
