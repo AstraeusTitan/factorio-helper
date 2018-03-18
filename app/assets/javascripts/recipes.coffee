@@ -25,7 +25,7 @@ recipe_calculator = (input_field) ->
     update_fields(input_field, ratio)
 
 update_fields = (field, ratio) ->
-    inputs = $("input:number").not(field)
+    inputs = $("input[type='number']").not(field)
     outputs = $("[id^='output']")
     update_value(ratio, input) for input in inputs
     update_text(ratio, output) for output in outputs
