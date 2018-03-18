@@ -1,0 +1,9 @@
+development:
+ host: ‘localhost’
+ port: ‘6379’
+test:
+ host: ‘localhost’
+ port: ‘6379’
+production:
+ host: ‘factorio-helper-001.za56nc.0001.usw2.cache.amazonaws.com’
+ port: ‘6379’
