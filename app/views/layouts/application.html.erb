@@ -13,10 +13,5 @@
     <%= render 'layouts/header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
-    <!-- Debug Print -->
-    <div class="container debug_print">
-      <h3>Params:</h3>
-      <%= debug(params) if Rails.env.development? %>
-    </div>
   </body>
 </html>
