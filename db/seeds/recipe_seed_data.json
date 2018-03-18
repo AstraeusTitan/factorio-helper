@@ -1,0 +1,2800 @@
+{
+    "recipes": [
+    {
+        "name": "assembling-machine-1",
+        "inputs":
+        {
+            "electronic-circuit": 3,
+            "iron-gear-wheel": 5,
+            "iron-plate": 9
+        },
+        "outputs":
+        {
+            "assembling-machine-1": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "firearm-magazine",
+        "inputs":
+        {
+            "iron-plate": 4
+        },
+        "outputs":
+        {
+            "firearm-magazine": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "pistol",
+        "inputs":
+        {
+            "copper-plate": 5,
+            "iron-plate": 5
+        },
+        "outputs":
+        {
+            "pistol": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "piercing-rounds-magazine",
+        "inputs":
+        {
+            "firearm-magazine": 1,
+            "steel-plate": 1,
+            "copper-plate": 5
+        },
+        "outputs":
+        {
+            "piercing-rounds-magazine": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "submachine-gun",
+        "inputs":
+        {
+            "iron-gear-wheel": 10,
+            "copper-plate": 5,
+            "iron-plate": 10
+        },
+        "outputs":
+        {
+            "submachine-gun": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "uranium-rounds-magazine",
+        "inputs":
+        {
+            "piercing-rounds-magazine": 1,
+            "uranium-238": 1
+        },
+        "outputs":
+        {
+            "uranium-rounds-magazine": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "beacon",
+        "inputs":
+        {
+            "electronic-circuit": 20,
+            "advanced-circuit": 20,
+            "steel-plate": 10,
+            "copper-cable": 10
+        },
+        "outputs":
+        {
+            "beacon": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "burner-inserter",
+        "inputs":
+        {
+            "iron-plate": 1,
+            "iron-gear-wheel": 1
+        },
+        "outputs":
+        {
+            "burner-inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "copper-cable",
+        "inputs":
+        {
+            "copper-plate": 1
+        },
+        "outputs":
+        {
+            "copper-cable": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "solar-panel-equipment",
+        "inputs":
+        {
+            "solar-panel": 5,
+            "advanced-circuit": 1,
+            "steel-plate": 5
+        },
+        "outputs":
+        {
+            "solar-panel-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "fusion-reactor-equipment",
+        "inputs":
+        {
+            "processing-unit": 250
+        },
+        "outputs":
+        {
+            "fusion-reactor-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "small-electric-pole",
+        "inputs":
+        {
+            "wood": 2,
+            "copper-cable": 2
+        },
+        "outputs":
+        {
+            "small-electric-pole": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "medium-electric-pole",
+        "inputs":
+        {
+            "steel-plate": 2,
+            "copper-plate": 2
+        },
+        "outputs":
+        {
+            "medium-electric-pole": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "big-electric-pole",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "copper-plate": 5
+        },
+        "outputs":
+        {
+            "big-electric-pole": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "substation",
+        "inputs":
+        {
+            "steel-plate": 10,
+            "advanced-circuit": 5,
+            "copper-plate": 5
+        },
+        "outputs":
+        {
+            "substation": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "sulfuric-acid",
+        "inputs":
+        {
+            "sulfur": 5,
+            "iron-plate": 1,
+            "water": 100
+        },
+        "outputs":
+        {
+            "sulfuric-acid": 50
+        },
+        "energy": 1
+    },
+    {
+        "name": "grenade",
+        "inputs":
+        {
+            "iron-plate": 5,
+            "coal": 10
+        },
+        "outputs":
+        {
+            "grenade": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "cluster-grenade",
+        "inputs":
+        {
+            "grenade": 7,
+            "explosives": 5,
+            "steel-plate": 5
+        },
+        "outputs":
+        {
+            "cluster-grenade": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "burner-mining-drill",
+        "inputs":
+        {
+            "iron-gear-wheel": 3,
+            "stone-furnace": 1,
+            "iron-plate": 3
+        },
+        "outputs":
+        {
+            "burner-mining-drill": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "wooden-chest",
+        "inputs":
+        {
+            "wood": 4
+        },
+        "outputs":
+        {
+            "wooden-chest": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "electric-mining-drill",
+        "inputs":
+        {
+            "electronic-circuit": 3,
+            "iron-gear-wheel": 5,
+            "iron-plate": 10
+        },
+        "outputs":
+        {
+            "electric-mining-drill": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "iron-chest",
+        "inputs":
+        {
+            "iron-plate": 8
+        },
+        "outputs":
+        {
+            "iron-chest": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "steel-chest",
+        "inputs":
+        {
+            "steel-plate": 8
+        },
+        "outputs":
+        {
+            "steel-chest": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "light-armor",
+        "inputs":
+        {
+            "iron-plate": 40
+        },
+        "outputs":
+        {
+            "light-armor": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "small-lamp",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "iron-stick": 3,
+            "iron-plate": 1
+        },
+        "outputs":
+        {
+            "small-lamp": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "iron-axe",
+        "inputs":
+        {
+            "iron-stick": 2,
+            "iron-plate": 3
+        },
+        "outputs":
+        {
+            "iron-axe": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "steel-axe",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "iron-stick": 2
+        },
+        "outputs":
+        {
+            "steel-axe": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "basic-oil-processing",
+        "inputs":
+        {
+            "crude-oil": 100
+        },
+        "outputs":
+        {
+            "heavy-oil": 30,
+            "light-oil": 30,
+            "petroleum-gas": 40
+        },
+        "energy": 5
+    },
+    {
+        "name": "advanced-oil-processing",
+        "inputs":
+        {
+            "water": 50,
+            "crude-oil": 100
+        },
+        "outputs":
+        {
+            "heavy-oil": 10,
+            "light-oil": 45,
+            "petroleum-gas": 55
+        },
+        "energy": 5
+    },
+    {
+        "name": "coal-liquefaction",
+        "inputs":
+        {
+            "coal": 10,
+            "heavy-oil": 25,
+            "steam": 50
+        },
+        "outputs":
+        {
+            "heavy-oil": 35,
+            "light-oil": 15,
+            "petroleum-gas": 20
+        },
+        "energy": 5
+    },
+    {
+        "name": "pipe",
+        "inputs":
+        {
+            "iron-plate": 1
+        },
+        "outputs":
+        {
+            "pipe": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "pipe-to-ground",
+        "inputs":
+        {
+            "pipe": 10,
+            "iron-plate": 5
+        },
+        "outputs":
+        {
+            "pipe-to-ground": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "logistic-robot",
+        "inputs":
+        {
+            "flying-robot-frame": 1,
+            "advanced-circuit": 2
+        },
+        "outputs":
+        {
+            "logistic-robot": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "construction-robot",
+        "inputs":
+        {
+            "flying-robot-frame": 1,
+            "electronic-circuit": 2
+        },
+        "outputs":
+        {
+            "construction-robot": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "science-pack-1",
+        "inputs":
+        {
+            "copper-plate": 1,
+            "iron-gear-wheel": 1
+        },
+        "outputs":
+        {
+            "science-pack-1": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "speed-module",
+        "inputs":
+        {
+            "advanced-circuit": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "speed-module": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "speed-module-2",
+        "inputs":
+        {
+            "speed-module": 4,
+            "advanced-circuit": 5,
+            "processing-unit": 5
+        },
+        "outputs":
+        {
+            "speed-module-2": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "speed-module-3",
+        "inputs":
+        {
+            "speed-module-2": 5,
+            "advanced-circuit": 5,
+            "processing-unit": 5
+        },
+        "outputs":
+        {
+            "speed-module-3": 1
+        },
+        "energy": 60
+    },
+    {
+        "name": "stone-brick",
+        "inputs":
+        {
+            "stone": 2
+        },
+        "outputs":
+        {
+            "stone-brick": 1
+        },
+        "energy": 3.5
+    },
+    {
+        "name": "stone-furnace",
+        "inputs":
+        {
+            "stone": 5
+        },
+        "outputs":
+        {
+            "stone-furnace": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "stone-wall",
+        "inputs":
+        {
+            "stone-brick": 5
+        },
+        "outputs":
+        {
+            "stone-wall": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "rail",
+        "inputs":
+        {
+            "stone": 1,
+            "iron-stick": 1,
+            "steel-plate": 1
+        },
+        "outputs":
+        {
+            "rail": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "train-stop",
+        "inputs":
+        {
+            "electronic-circuit": 5,
+            "iron-plate": 10,
+            "steel-plate": 3
+        },
+        "outputs":
+        {
+            "train-stop": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "rail-signal",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "iron-plate": 5
+        },
+        "outputs":
+        {
+            "rail-signal": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "rail-chain-signal",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "iron-plate": 5
+        },
+        "outputs":
+        {
+            "rail-chain-signal": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "locomotive",
+        "inputs":
+        {
+            "engine-unit": 20,
+            "electronic-circuit": 10,
+            "steel-plate": 30
+        },
+        "outputs":
+        {
+            "locomotive": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "cargo-wagon",
+        "inputs":
+        {
+            "iron-gear-wheel": 10,
+            "iron-plate": 20,
+            "steel-plate": 20
+        },
+        "outputs":
+        {
+            "cargo-wagon": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "fluid-wagon",
+        "inputs":
+        {
+            "iron-gear-wheel": 10,
+            "steel-plate": 16,
+            "pipe": 8,
+            "storage-tank": 3
+        },
+        "outputs":
+        {
+            "fluid-wagon": 1
+        },
+        "energy": 1.5
+    },
+    {
+        "name": "transport-belt",
+        "inputs":
+        {
+            "iron-plate": 1,
+            "iron-gear-wheel": 1
+        },
+        "outputs":
+        {
+            "transport-belt": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "fast-transport-belt",
+        "inputs":
+        {
+            "iron-gear-wheel": 5,
+            "transport-belt": 1
+        },
+        "outputs":
+        {
+            "fast-transport-belt": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "express-transport-belt",
+        "inputs":
+        {
+            "iron-gear-wheel": 10,
+            "fast-transport-belt": 1,
+            "lubricant": 20
+        },
+        "outputs":
+        {
+            "express-transport-belt": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "gate",
+        "inputs":
+        {
+            "stone-wall": 1,
+            "steel-plate": 2,
+            "electronic-circuit": 2
+        },
+        "outputs":
+        {
+            "gate": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "wood",
+        "inputs":
+        {
+            "raw-wood": 1
+        },
+        "outputs":
+        {
+            "wood": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "assembling-machine-2",
+        "inputs":
+        {
+            "iron-plate": 9,
+            "electronic-circuit": 3,
+            "iron-gear-wheel": 5,
+            "assembling-machine-1": 1
+        },
+        "outputs":
+        {
+            "assembling-machine-2": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "concrete",
+        "inputs":
+        {
+            "stone-brick": 5,
+            "iron-ore": 1,
+            "water": 100
+        },
+        "outputs":
+        {
+            "concrete": 10
+        },
+        "energy": 10
+    },
+    {
+        "name": "hazard-concrete",
+        "inputs":
+        {
+            "concrete": 10
+        },
+        "outputs":
+        {
+            "hazard-concrete": 10
+        },
+        "energy": 0.25
+    },
+    {
+        "name": "fill-crude-oil-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "crude-oil": 250
+        },
+        "outputs":
+        {
+            "crude-oil-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fill-heavy-oil-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "heavy-oil": 250
+        },
+        "outputs":
+        {
+            "heavy-oil-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fill-light-oil-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "light-oil": 250
+        },
+        "outputs":
+        {
+            "light-oil-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fill-lubricant-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "lubricant": 250
+        },
+        "outputs":
+        {
+            "lubricant-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fill-petroleum-gas-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "petroleum-gas": 250
+        },
+        "outputs":
+        {
+            "petroleum-gas-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fill-sulfuric-acid-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "sulfuric-acid": 250
+        },
+        "outputs":
+        {
+            "sulfuric-acid-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fill-water-barrel",
+        "inputs":
+        {
+            "empty-barrel": 1,
+            "water": 250
+        },
+        "outputs":
+        {
+            "water-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "heavy-oil-cracking",
+        "inputs":
+        {
+            "water": 30,
+            "heavy-oil": 40
+        },
+        "outputs":
+        {
+            "light-oil": 30
+        },
+        "energy": 3
+    },
+    {
+        "name": "light-oil-cracking",
+        "inputs":
+        {
+            "water": 30,
+            "light-oil": 30
+        },
+        "outputs":
+        {
+            "petroleum-gas": 20
+        },
+        "energy": 3
+    },
+    {
+        "name": "solid-fuel-from-light-oil",
+        "inputs":
+        {
+            "light-oil": 10
+        },
+        "outputs":
+        {
+            "solid-fuel": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "solid-fuel-from-petroleum-gas",
+        "inputs":
+        {
+            "petroleum-gas": 20
+        },
+        "outputs":
+        {
+            "solid-fuel": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "solid-fuel-from-heavy-oil",
+        "inputs":
+        {
+            "heavy-oil": 20
+        },
+        "outputs":
+        {
+            "solid-fuel": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "storage-tank",
+        "inputs":
+        {
+            "iron-plate": 20,
+            "steel-plate": 5
+        },
+        "outputs":
+        {
+            "storage-tank": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "offshore-pump",
+        "inputs":
+        {
+            "electronic-circuit": 2,
+            "pipe": 1,
+            "iron-gear-wheel": 1
+        },
+        "outputs":
+        {
+            "offshore-pump": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "pumpjack",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "iron-gear-wheel": 10,
+            "electronic-circuit": 5,
+            "pipe": 10
+        },
+        "outputs":
+        {
+            "pumpjack": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "heavy-armor",
+        "inputs":
+        {
+            "copper-plate": 100,
+            "steel-plate": 50
+        },
+        "outputs":
+        {
+            "heavy-armor": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "inserter",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "iron-gear-wheel": 1,
+            "iron-plate": 1
+        },
+        "outputs":
+        {
+            "inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "iron-plate",
+        "inputs":
+        {
+            "iron-ore": 1
+        },
+        "outputs":
+        {
+            "iron-plate": 1
+        },
+        "energy": 3.5
+    },
+    {
+        "name": "iron-stick",
+        "inputs":
+        {
+            "iron-plate": 1
+        },
+        "outputs":
+        {
+            "iron-stick": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "car",
+        "inputs":
+        {
+            "engine-unit": 8,
+            "iron-plate": 20,
+            "steel-plate": 5
+        },
+        "outputs":
+        {
+            "car": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "tank",
+        "inputs":
+        {
+            "engine-unit": 32,
+            "steel-plate": 50,
+            "iron-gear-wheel": 15,
+            "advanced-circuit": 10
+        },
+        "outputs":
+        {
+            "tank": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "small-plane",
+        "inputs":
+        {
+            "plastic-bar": 100,
+            "advanced-circuit": 200,
+            "electric-engine-unit": 20,
+            "battery": 100
+        },
+        "outputs":
+        {
+            "small-plane": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "pump",
+        "inputs":
+        {
+            "engine-unit": 1,
+            "steel-plate": 1,
+            "pipe": 1
+        },
+        "outputs":
+        {
+            "pump": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "poison-capsule",
+        "inputs":
+        {
+            "steel-plate": 3,
+            "electronic-circuit": 3,
+            "coal": 10
+        },
+        "outputs":
+        {
+            "poison-capsule": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "repair-pack",
+        "inputs":
+        {
+            "electronic-circuit": 2,
+            "iron-gear-wheel": 2
+        },
+        "outputs":
+        {
+            "repair-pack": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "science-pack-2",
+        "inputs":
+        {
+            "inserter": 1,
+            "transport-belt": 1
+        },
+        "outputs":
+        {
+            "science-pack-2": 1
+        },
+        "energy": 6
+    },
+    {
+        "name": "energy-shield-equipment",
+        "inputs":
+        {
+            "advanced-circuit": 5,
+            "steel-plate": 10
+        },
+        "outputs":
+        {
+            "energy-shield-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "energy-shield-mk2-equipment",
+        "inputs":
+        {
+            "energy-shield-equipment": 10,
+            "processing-unit": 10
+        },
+        "outputs":
+        {
+            "energy-shield-mk2-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "shotgun",
+        "inputs":
+        {
+            "iron-plate": 15,
+            "iron-gear-wheel": 5,
+            "copper-plate": 10,
+            "wood": 5
+        },
+        "outputs":
+        {
+            "shotgun": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "shotgun-shell",
+        "inputs":
+        {
+            "copper-plate": 2,
+            "iron-plate": 2
+        },
+        "outputs":
+        {
+            "shotgun-shell": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "combat-shotgun",
+        "inputs":
+        {
+            "steel-plate": 15,
+            "iron-gear-wheel": 5,
+            "copper-plate": 10,
+            "wood": 10
+        },
+        "outputs":
+        {
+            "combat-shotgun": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "piercing-shotgun-shell",
+        "inputs":
+        {
+            "shotgun-shell": 2,
+            "copper-plate": 5,
+            "steel-plate": 2
+        },
+        "outputs":
+        {
+            "piercing-shotgun-shell": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "boiler",
+        "inputs":
+        {
+            "stone-furnace": 1,
+            "pipe": 4
+        },
+        "outputs":
+        {
+            "boiler": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "steam-engine",
+        "inputs":
+        {
+            "iron-gear-wheel": 8,
+            "pipe": 5,
+            "iron-plate": 10
+        },
+        "outputs":
+        {
+            "steam-engine": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "steam-turbine",
+        "inputs":
+        {
+            "iron-gear-wheel": 50,
+            "copper-plate": 50,
+            "pipe": 20
+        },
+        "outputs":
+        {
+            "steam-turbine": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "steel-furnace",
+        "inputs":
+        {
+            "steel-plate": 6,
+            "stone-brick": 10
+        },
+        "outputs":
+        {
+            "steel-furnace": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "logistic-chest-active-provider",
+        "inputs":
+        {
+            "steel-chest": 1,
+            "electronic-circuit": 3,
+            "advanced-circuit": 1
+        },
+        "outputs":
+        {
+            "logistic-chest-active-provider": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "logistic-chest-passive-provider",
+        "inputs":
+        {
+            "steel-chest": 1,
+            "electronic-circuit": 3,
+            "advanced-circuit": 1
+        },
+        "outputs":
+        {
+            "logistic-chest-passive-provider": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "logistic-chest-requester",
+        "inputs":
+        {
+            "steel-chest": 1,
+            "electronic-circuit": 3,
+            "advanced-circuit": 1
+        },
+        "outputs":
+        {
+            "logistic-chest-requester": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "logistic-chest-storage",
+        "inputs":
+        {
+            "steel-chest": 1,
+            "electronic-circuit": 3,
+            "advanced-circuit": 1
+        },
+        "outputs":
+        {
+            "logistic-chest-storage": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "gun-turret",
+        "inputs":
+        {
+            "iron-gear-wheel": 10,
+            "copper-plate": 10,
+            "iron-plate": 20
+        },
+        "outputs":
+        {
+            "gun-turret": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "laser-turret",
+        "inputs":
+        {
+            "steel-plate": 20,
+            "electronic-circuit": 20,
+            "battery": 12
+        },
+        "outputs":
+        {
+            "laser-turret": 1
+        },
+        "energy": 20
+    },
+    {
+        "name": "flamethrower-turret",
+        "inputs":
+        {
+            "steel-plate": 30,
+            "iron-gear-wheel": 15,
+            "pipe": 10,
+            "engine-unit": 5
+        },
+        "outputs":
+        {
+            "flamethrower-turret": 1
+        },
+        "energy": 20
+    },
+    {
+        "name": "underground-belt",
+        "inputs":
+        {
+            "iron-plate": 10,
+            "transport-belt": 5
+        },
+        "outputs":
+        {
+            "underground-belt": 2
+        },
+        "energy": 1
+    },
+    {
+        "name": "fast-underground-belt",
+        "inputs":
+        {
+            "iron-gear-wheel": 40,
+            "underground-belt": 2
+        },
+        "outputs":
+        {
+            "fast-underground-belt": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "express-underground-belt",
+        "inputs":
+        {
+            "iron-gear-wheel": 80,
+            "fast-underground-belt": 2,
+            "lubricant": 40
+        },
+        "outputs":
+        {
+            "express-underground-belt": 2
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "red-wire",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "copper-cable": 1
+        },
+        "outputs":
+        {
+            "red-wire": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "green-wire",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "copper-cable": 1
+        },
+        "outputs":
+        {
+            "green-wire": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "assembling-machine-3",
+        "inputs":
+        {
+            "speed-module": 4,
+            "assembling-machine-2": 2
+        },
+        "outputs":
+        {
+            "assembling-machine-3": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "battery-equipment",
+        "inputs":
+        {
+            "battery": 5,
+            "steel-plate": 10
+        },
+        "outputs":
+        {
+            "battery-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "battery-mk2-equipment",
+        "inputs":
+        {
+            "battery-equipment": 10,
+            "processing-unit": 20
+        },
+        "outputs":
+        {
+            "battery-mk2-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "arithmetic-combinator",
+        "inputs":
+        {
+            "copper-cable": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "arithmetic-combinator": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "decider-combinator",
+        "inputs":
+        {
+            "copper-cable": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "decider-combinator": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "constant-combinator",
+        "inputs":
+        {
+            "copper-cable": 5,
+            "electronic-circuit": 2
+        },
+        "outputs":
+        {
+            "constant-combinator": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "copper-plate",
+        "inputs":
+        {
+            "copper-ore": 1
+        },
+        "outputs":
+        {
+            "copper-plate": 1
+        },
+        "energy": 3.5
+    },
+    {
+        "name": "effectivity-module",
+        "inputs":
+        {
+            "advanced-circuit": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "effectivity-module": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "effectivity-module-2",
+        "inputs":
+        {
+            "effectivity-module": 4,
+            "advanced-circuit": 5,
+            "processing-unit": 5
+        },
+        "outputs":
+        {
+            "effectivity-module-2": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "effectivity-module-3",
+        "inputs":
+        {
+            "effectivity-module-2": 5,
+            "advanced-circuit": 5,
+            "processing-unit": 5
+        },
+        "outputs":
+        {
+            "effectivity-module-3": 1
+        },
+        "energy": 60
+    },
+    {
+        "name": "electric-furnace",
+        "inputs":
+        {
+            "steel-plate": 10,
+            "advanced-circuit": 5,
+            "stone-brick": 10
+        },
+        "outputs":
+        {
+            "electric-furnace": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "empty-crude-oil-barrel",
+        "inputs":
+        {
+            "crude-oil-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "crude-oil": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "empty-heavy-oil-barrel",
+        "inputs":
+        {
+            "heavy-oil-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "heavy-oil": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "empty-light-oil-barrel",
+        "inputs":
+        {
+            "light-oil-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "light-oil": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "empty-lubricant-barrel",
+        "inputs":
+        {
+            "lubricant-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "lubricant": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "empty-petroleum-gas-barrel",
+        "inputs":
+        {
+            "petroleum-gas-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "petroleum-gas": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "empty-sulfuric-acid-barrel",
+        "inputs":
+        {
+            "sulfuric-acid-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "sulfuric-acid": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "empty-water-barrel",
+        "inputs":
+        {
+            "water-barrel": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1,
+            "water": 250
+        },
+        "energy": 1
+    },
+    {
+        "name": "iron-gear-wheel",
+        "inputs":
+        {
+            "iron-plate": 2
+        },
+        "outputs":
+        {
+            "iron-gear-wheel": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "landfill",
+        "inputs":
+        {
+            "stone": 20
+        },
+        "outputs":
+        {
+            "landfill": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "long-handed-inserter",
+        "inputs":
+        {
+            "iron-gear-wheel": 1,
+            "iron-plate": 1,
+            "inserter": 1
+        },
+        "outputs":
+        {
+            "long-handed-inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "modular-armor",
+        "inputs":
+        {
+            "advanced-circuit": 30,
+            "steel-plate": 50
+        },
+        "outputs":
+        {
+            "modular-armor": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "productivity-module",
+        "inputs":
+        {
+            "advanced-circuit": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "productivity-module": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "productivity-module-2",
+        "inputs":
+        {
+            "productivity-module": 4,
+            "advanced-circuit": 5,
+            "processing-unit": 5
+        },
+        "outputs":
+        {
+            "productivity-module-2": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "productivity-module-3",
+        "inputs":
+        {
+            "productivity-module-2": 5,
+            "advanced-circuit": 5,
+            "processing-unit": 5
+        },
+        "outputs":
+        {
+            "productivity-module-3": 1
+        },
+        "energy": 60
+    },
+    {
+        "name": "railgun",
+        "inputs":
+        {
+            "steel-plate": 15,
+            "copper-plate": 15,
+            "electronic-circuit": 10,
+            "advanced-circuit": 5
+        },
+        "outputs":
+        {
+            "railgun": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "railgun-dart",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "railgun-dart": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "science-pack-3",
+        "inputs":
+        {
+            "advanced-circuit": 1,
+            "engine-unit": 1,
+            "electric-mining-drill": 1
+        },
+        "outputs":
+        {
+            "science-pack-3": 1
+        },
+        "energy": 12
+    },
+    {
+        "name": "roboport",
+        "inputs":
+        {
+            "steel-plate": 45,
+            "iron-gear-wheel": 45,
+            "advanced-circuit": 45
+        },
+        "outputs":
+        {
+            "roboport": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "slowdown-capsule",
+        "inputs":
+        {
+            "steel-plate": 2,
+            "electronic-circuit": 2,
+            "coal": 5
+        },
+        "outputs":
+        {
+            "slowdown-capsule": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "splitter",
+        "inputs":
+        {
+            "electronic-circuit": 5,
+            "iron-plate": 5,
+            "transport-belt": 4
+        },
+        "outputs":
+        {
+            "splitter": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fast-splitter",
+        "inputs":
+        {
+            "splitter": 1,
+            "iron-gear-wheel": 10,
+            "electronic-circuit": 10
+        },
+        "outputs":
+        {
+            "fast-splitter": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "express-splitter",
+        "inputs":
+        {
+            "fast-splitter": 1,
+            "iron-gear-wheel": 10,
+            "advanced-circuit": 10,
+            "lubricant": 80
+        },
+        "outputs":
+        {
+            "express-splitter": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "personal-laser-defense-equipment",
+        "inputs":
+        {
+            "processing-unit": 1,
+            "steel-plate": 5,
+            "laser-turret": 5
+        },
+        "outputs":
+        {
+            "personal-laser-defense-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "discharge-defense-equipment",
+        "inputs":
+        {
+            "processing-unit": 5,
+            "steel-plate": 20,
+            "laser-turret": 10
+        },
+        "outputs":
+        {
+            "discharge-defense-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "cannon-shell",
+        "inputs":
+        {
+            "steel-plate": 2,
+            "plastic-bar": 2,
+            "explosives": 1
+        },
+        "outputs":
+        {
+            "cannon-shell": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "explosive-cannon-shell",
+        "inputs":
+        {
+            "steel-plate": 2,
+            "plastic-bar": 2,
+            "explosives": 2
+        },
+        "outputs":
+        {
+            "explosive-cannon-shell": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "uranium-cannon-shell",
+        "inputs":
+        {
+            "cannon-shell": 1,
+            "uranium-238": 1
+        },
+        "outputs":
+        {
+            "uranium-cannon-shell": 1
+        },
+        "energy": 12
+    },
+    {
+        "name": "defender-capsule",
+        "inputs":
+        {
+            "piercing-rounds-magazine": 1,
+            "electronic-circuit": 2,
+            "iron-gear-wheel": 3
+        },
+        "outputs":
+        {
+            "defender-capsule": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "empty-barrel",
+        "inputs":
+        {
+            "steel-plate": 1
+        },
+        "outputs":
+        {
+            "empty-barrel": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "explosive-uranium-cannon-shell",
+        "inputs":
+        {
+            "explosive-cannon-shell": 1,
+            "uranium-238": 1
+        },
+        "outputs":
+        {
+            "explosive-uranium-cannon-shell": 1
+        },
+        "energy": 12
+    },
+    {
+        "name": "fast-inserter",
+        "inputs":
+        {
+            "electronic-circuit": 2,
+            "iron-plate": 2,
+            "inserter": 1
+        },
+        "outputs":
+        {
+            "fast-inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "loader",
+        "inputs":
+        {
+            "inserter": 5,
+            "electronic-circuit": 5,
+            "iron-gear-wheel": 5,
+            "iron-plate": 5,
+            "transport-belt": 5
+        },
+        "outputs":
+        {
+            "loader": 1
+        },
+        "energy": 1
+    },
+    {
+        "name": "fast-loader",
+        "inputs":
+        {
+            "fast-transport-belt": 5,
+            "loader": 1
+        },
+        "outputs":
+        {
+            "fast-loader": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "express-loader",
+        "inputs":
+        {
+            "express-transport-belt": 5,
+            "fast-loader": 1
+        },
+        "outputs":
+        {
+            "express-loader": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "military-science-pack",
+        "inputs":
+        {
+            "piercing-rounds-magazine": 1,
+            "grenade": 1,
+            "gun-turret": 1
+        },
+        "outputs":
+        {
+            "military-science-pack": 2
+        },
+        "energy": 10
+    },
+    {
+        "name": "power-switch",
+        "inputs":
+        {
+            "iron-plate": 5,
+            "copper-cable": 5,
+            "electronic-circuit": 2
+        },
+        "outputs":
+        {
+            "power-switch": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "programmable-speaker",
+        "inputs":
+        {
+            "iron-plate": 5,
+            "copper-cable": 5,
+            "electronic-circuit": 4
+        },
+        "outputs":
+        {
+            "programmable-speaker": 1
+        },
+        "energy": 2
+    },
+    {
+        "name": "power-armor",
+        "inputs":
+        {
+            "processing-unit": 40,
+            "electric-engine-unit": 20,
+            "steel-plate": 40
+        },
+        "outputs":
+        {
+            "power-armor": 1
+        },
+        "energy": 20
+    },
+    {
+        "name": "radar",
+        "inputs":
+        {
+            "electronic-circuit": 5,
+            "iron-gear-wheel": 5,
+            "iron-plate": 10
+        },
+        "outputs":
+        {
+            "radar": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "oil-refinery",
+        "inputs":
+        {
+            "steel-plate": 15,
+            "iron-gear-wheel": 10,
+            "stone-brick": 10,
+            "electronic-circuit": 10,
+            "pipe": 10
+        },
+        "outputs":
+        {
+            "oil-refinery": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "rocket-launcher",
+        "inputs":
+        {
+            "iron-plate": 5,
+            "iron-gear-wheel": 5,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "rocket-launcher": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "rocket",
+        "inputs":
+        {
+            "electronic-circuit": 1,
+            "explosives": 1,
+            "iron-plate": 2
+        },
+        "outputs":
+        {
+            "rocket": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "explosive-rocket",
+        "inputs":
+        {
+            "rocket": 1,
+            "explosives": 2
+        },
+        "outputs":
+        {
+            "explosive-rocket": 1
+        },
+        "energy": 8
+    },
+    {
+        "name": "atomic-bomb",
+        "inputs":
+        {
+            "processing-unit": 20,
+            "explosives": 10,
+            "uranium-235": 30
+        },
+        "outputs":
+        {
+            "atomic-bomb": 1
+        },
+        "energy": 50
+    },
+    {
+        "name": "solar-panel",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "electronic-circuit": 15,
+            "copper-plate": 5
+        },
+        "outputs":
+        {
+            "solar-panel": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "steel-plate",
+        "inputs":
+        {
+            "iron-plate": 5
+        },
+        "outputs":
+        {
+            "steel-plate": 1
+        },
+        "energy": 17.5
+    },
+    {
+        "name": "accumulator",
+        "inputs":
+        {
+            "iron-plate": 2,
+            "battery": 5
+        },
+        "outputs":
+        {
+            "accumulator": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "chemical-plant",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "iron-gear-wheel": 5,
+            "electronic-circuit": 5,
+            "pipe": 5
+        },
+        "outputs":
+        {
+            "chemical-plant": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "distractor-capsule",
+        "inputs":
+        {
+            "defender-capsule": 4,
+            "advanced-circuit": 3
+        },
+        "outputs":
+        {
+            "distractor-capsule": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "electric-energy-interface",
+        "inputs":
+        {
+            "iron-plate": 2,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "electric-energy-interface": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "electronic-circuit",
+        "inputs":
+        {
+            "iron-plate": 1,
+            "copper-cable": 3
+        },
+        "outputs":
+        {
+            "electronic-circuit": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "exoskeleton-equipment",
+        "inputs":
+        {
+            "processing-unit": 10,
+            "electric-engine-unit": 30,
+            "steel-plate": 20
+        },
+        "outputs":
+        {
+            "exoskeleton-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "filter-inserter",
+        "inputs":
+        {
+            "fast-inserter": 1,
+            "electronic-circuit": 4
+        },
+        "outputs":
+        {
+            "filter-inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "flamethrower",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "iron-gear-wheel": 10
+        },
+        "outputs":
+        {
+            "flamethrower": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "flamethrower-ammo",
+        "inputs":
+        {
+            "steel-plate": 5,
+            "light-oil": 50,
+            "heavy-oil": 50
+        },
+        "outputs":
+        {
+            "flamethrower-ammo": 1
+        },
+        "energy": 6
+    },
+    {
+        "name": "lubricant",
+        "inputs":
+        {
+            "heavy-oil": 10
+        },
+        "outputs":
+        {
+            "lubricant": 10
+        },
+        "energy": 1
+    },
+    {
+        "name": "power-armor-mk2",
+        "inputs":
+        {
+            "effectivity-module-3": 5,
+            "speed-module-3": 5,
+            "processing-unit": 40,
+            "steel-plate": 40
+        },
+        "outputs":
+        {
+            "power-armor-mk2": 1
+        },
+        "energy": 25
+    },
+    {
+        "name": "production-science-pack",
+        "inputs":
+        {
+            "electric-engine-unit": 1,
+            "assembling-machine-1": 1,
+            "electric-furnace": 1
+        },
+        "outputs":
+        {
+            "production-science-pack": 2
+        },
+        "energy": 14
+    },
+    {
+        "name": "personal-roboport-equipment",
+        "inputs":
+        {
+            "advanced-circuit": 10,
+            "iron-gear-wheel": 40,
+            "steel-plate": 20,
+            "battery": 45
+        },
+        "outputs":
+        {
+            "personal-roboport-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "personal-roboport-mk2-equipment",
+        "inputs":
+        {
+            "personal-roboport-equipment": 5,
+            "processing-unit": 100
+        },
+        "outputs":
+        {
+            "personal-roboport-mk2-equipment": 1
+        },
+        "energy": 20
+    },
+    {
+        "name": "rocket-silo",
+        "inputs":
+        {
+            "steel-plate": 1000,
+            "concrete": 1000,
+            "pipe": 100,
+            "processing-unit": 200,
+            "electric-engine-unit": 200
+        },
+        "outputs":
+        {
+            "rocket-silo": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "advanced-circuit",
+        "inputs":
+        {
+            "electronic-circuit": 2,
+            "plastic-bar": 2,
+            "copper-cable": 4
+        },
+        "outputs":
+        {
+            "advanced-circuit": 1
+        },
+        "energy": 6
+    },
+    {
+        "name": "destroyer-capsule",
+        "inputs":
+        {
+            "distractor-capsule": 4,
+            "speed-module": 1
+        },
+        "outputs":
+        {
+            "destroyer-capsule": 1
+        },
+        "energy": 15
+    },
+    {
+        "name": "high-tech-science-pack",
+        "inputs":
+        {
+            "battery": 1,
+            "processing-unit": 3,
+            "speed-module": 1,
+            "copper-cable": 30
+        },
+        "outputs":
+        {
+            "high-tech-science-pack": 2
+        },
+        "energy": 14
+    },
+    {
+        "name": "land-mine",
+        "inputs":
+        {
+            "steel-plate": 1,
+            "explosives": 2
+        },
+        "outputs":
+        {
+            "land-mine": 4
+        },
+        "energy": 5
+    },
+    {
+        "name": "night-vision-equipment",
+        "inputs":
+        {
+            "advanced-circuit": 5,
+            "steel-plate": 10
+        },
+        "outputs":
+        {
+            "night-vision-equipment": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "nuclear-reactor",
+        "inputs":
+        {
+            "concrete": 500,
+            "steel-plate": 500,
+            "advanced-circuit": 500,
+            "copper-plate": 500
+        },
+        "outputs":
+        {
+            "nuclear-reactor": 1
+        },
+        "energy": 4
+    },
+    {
+        "name": "heat-exchanger",
+        "inputs":
+        {
+            "steel-plate": 10,
+            "copper-plate": 100,
+            "pipe": 10
+        },
+        "outputs":
+        {
+            "heat-exchanger": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "heat-pipe",
+        "inputs":
+        {
+            "steel-plate": 10,
+            "copper-plate": 20
+        },
+        "outputs":
+        {
+            "heat-pipe": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "stack-inserter",
+        "inputs":
+        {
+            "iron-gear-wheel": 15,
+            "electronic-circuit": 15,
+            "advanced-circuit": 1,
+            "fast-inserter": 1
+        },
+        "outputs":
+        {
+            "stack-inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "sulfur",
+        "inputs":
+        {
+            "water": 30,
+            "petroleum-gas": 30
+        },
+        "outputs":
+        {
+            "sulfur": 2
+        },
+        "energy": 1
+    },
+    {
+        "name": "centrifuge",
+        "inputs":
+        {
+            "concrete": 100,
+            "steel-plate": 50,
+            "advanced-circuit": 100,
+            "iron-gear-wheel": 100
+        },
+        "outputs":
+        {
+            "centrifuge": 1
+        },
+        "energy": 4
+    },
+    {
+        "name": "lab",
+        "inputs":
+        {
+            "electronic-circuit": 10,
+            "iron-gear-wheel": 10,
+            "transport-belt": 4
+        },
+        "outputs":
+        {
+            "lab": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "plastic-bar",
+        "inputs":
+        {
+            "coal": 1,
+            "petroleum-gas": 20
+        },
+        "outputs":
+        {
+            "plastic-bar": 2
+        },
+        "energy": 1
+    },
+    {
+        "name": "processing-unit",
+        "inputs":
+        {
+            "electronic-circuit": 20,
+            "advanced-circuit": 2,
+            "sulfuric-acid": 5
+        },
+        "outputs":
+        {
+            "processing-unit": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "stack-filter-inserter",
+        "inputs":
+        {
+            "stack-inserter": 1,
+            "electronic-circuit": 5
+        },
+        "outputs":
+        {
+            "stack-filter-inserter": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "engine-unit",
+        "inputs":
+        {
+            "steel-plate": 1,
+            "iron-gear-wheel": 1,
+            "pipe": 2
+        },
+        "outputs":
+        {
+            "engine-unit": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "uranium-processing",
+        "inputs":
+        {
+            "uranium-ore": 10
+        },
+        "outputs":
+        {
+            "uranium-235": 1,
+            "uranium-238": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "electric-engine-unit",
+        "inputs":
+        {
+            "engine-unit": 1,
+            "electronic-circuit": 2,
+            "lubricant": 15
+        },
+        "outputs":
+        {
+            "electric-engine-unit": 1
+        },
+        "energy": 10
+    },
+    {
+        "name": "battery",
+        "inputs":
+        {
+            "iron-plate": 1,
+            "copper-plate": 1,
+            "sulfuric-acid": 20
+        },
+        "outputs":
+        {
+            "battery": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "explosives",
+        "inputs":
+        {
+            "sulfur": 1,
+            "coal": 1,
+            "water": 10
+        },
+        "outputs":
+        {
+            "explosives": 1
+        },
+        "energy": 5
+    },
+    {
+        "name": "flying-robot-frame",
+        "inputs":
+        {
+            "electric-engine-unit": 1,
+            "battery": 2,
+            "steel-plate": 1,
+            "electronic-circuit": 3
+        },
+        "outputs":
+        {
+            "flying-robot-frame": 1
+        },
+        "energy": 20
+    },
+    {
+        "name": "low-density-structure",
+        "inputs":
+        {
+            "steel-plate": 10,
+            "copper-plate": 5,
+            "plastic-bar": 5
+        },
+        "outputs":
+        {
+            "low-density-structure": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "rocket-fuel",
+        "inputs":
+        {
+            "solid-fuel": 10
+        },
+        "outputs":
+        {
+            "rocket-fuel": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "rocket-control-unit",
+        "inputs":
+        {
+            "processing-unit": 1,
+            "speed-module": 1
+        },
+        "outputs":
+        {
+            "rocket-control-unit": 1
+        },
+        "energy": 30
+    },
+    {
+        "name": "rocket-part",
+        "inputs":
+        {
+            "low-density-structure": 10,
+            "rocket-fuel": 10,
+            "rocket-control-unit": 10
+        },
+        "outputs":
+        {
+            "rocket-part": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "satellite",
+        "inputs":
+        {
+            "low-density-structure": 100,
+            "solar-panel": 100,
+            "accumulator": 100,
+            "radar": 5,
+            "processing-unit": 100,
+            "rocket-fuel": 50
+        },
+        "outputs":
+        {
+            "satellite": 1
+        },
+        "energy": 3
+    },
+    {
+        "name": "uranium-fuel-cell",
+        "inputs":
+        {
+            "iron-plate": 10,
+            "uranium-235": 1,
+            "uranium-238": 19
+        },
+        "outputs":
+        {
+            "uranium-fuel-cell": 10
+        },
+        "energy": 10
+    },
+    {
+        "name": "nuclear-fuel-reprocessing",
+        "inputs":
+        {
+            "used-up-uranium-fuel-cell": 5
+        },
+        "outputs":
+        {
+            "uranium-238": 3
+        },
+        "energy": 50
+    },
+    {
+        "name": "kovarex-enrichment-process",
+        "inputs":
+        {
+            "uranium-235": 40,
+            "uranium-238": 5
+        },
+        "outputs":
+        {
+            "uranium-235": 41,
+            "uranium-238": 2
+        },
+        "energy": 50
+    },
+    {
+        "name": "discharge-defense-remote",
+        "inputs":
+        {
+            "electronic-circuit": 1
+        },
+        "outputs":
+        {
+            "discharge-defense-remote": 1
+        },
+        "energy": 0.5
+    },
+    {
+        "name": "player-port",
+        "inputs":
+        {
+            "electronic-circuit": 10,
+            "iron-gear-wheel": 5,
+            "iron-plate": 1
+        },
+        "outputs":
+        {
+            "player-port": 1
+        },
+        "energy": 0.5
+    }]
+}
