@@ -2,7 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// Welcome page
+.welcome-page {
+    height: 85%;
+}
+
 .welcome-message {
     background-image: url(asset_path('logo.svg'));
     background-repeat: no-repeat;
