@@ -43,7 +43,7 @@ a {
     }
 
     .navbar-brand {
-        background-image: url(/assets/logo.svg);
+        background-image: url(asset_path('logo.svg'));
         background-repeat: no-repeat;
         background-position: center;
         color: $light-grey;

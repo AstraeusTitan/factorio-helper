@@ -4,7 +4,7 @@
 
 // Welcome page
 .welcome-message {
-    background-image: url(/assets/logo.svg);
+    background-image: url(asset_path('logo.svg'));
     background-repeat: no-repeat;
     background-position: center;
     padding: 80px 0;
