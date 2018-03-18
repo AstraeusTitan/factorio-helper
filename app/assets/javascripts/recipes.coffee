@@ -14,9 +14,9 @@ filter_recipes = (filter) ->
     $(".recipe").parent().removeClass("d-none")
     if filter
         # Hide any recipe that does not have the filter in the name
-        $(".recipe").not("[data-name*='" + filter + "']").parent().addClass("d-none")
+        $(".recipe:not([data-name*='" + filter + "' i])").parent().addClass("d-none")
         # Unhide any recipe with an ingredient that has the filter in the name
-        $(".ingredient[data-name*='" + filter + "'][data-type*='output']").closest(".recipe-col").removeClass("d-none")
+        $(".ingredient[data-name*='" + filter + " i'][data-type*='output']").closest(".recipe-col").removeClass("d-none")
 
 recipe_calculator = (input_field) ->
     new_value = input_field.val()
