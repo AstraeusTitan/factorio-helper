@@ -8,7 +8,7 @@ User.destroy_all
 admin = User.new
 admin.email = 'astraeusdev@gmail.com'
 admin.password = 'Qp7Al4Zm1'
-puts admin.save
+admin.save
 
 # Seed recipes with base recipes
 Recipe.owned_by(admin).destroy_all
