@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # Static pages
   get '/welcome', to: 'static_pages#welcome'
   get '/details', to: 'static_pages#details'
+  get '/mod_download', to: 'static_pages#mod_download'
   # Users
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
