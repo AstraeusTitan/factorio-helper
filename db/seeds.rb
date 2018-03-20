@@ -21,18 +21,19 @@ Recipe.transaction do
   data[ 'recipes' ].each do |recipe|
     record = Recipe.new
     record.user = admin
-    record.name = recipe[ 'name' ]
+    record.name = recipe[ 'name' ].split('-').map(&:capitalize).join(' ')
     record.energy_cost = recipe[ 'energy' ]
     record.modded = false
     record.save
 
     recipe[ 'inputs' ].each do |name, value|
-      record.ingredients.create name: name, amount: value, input: true, recipe: record
+      record.ingredients.create name: name.split('-').map(&:capitalize).join(' '),
+        amount: value, input: true, recipe: record
     end
 
     recipe[ 'outputs' ].each do |name, value|
-      record.ingredients.create name: name, amount: value, input: false, recipe: record
+      record.ingredients.create name: name.split('-').map(&:capitalize).join(' '),
+        amount: value, input: false, recipe: record
     end
   end
 end
-

@@ -1,5 +1,5 @@
 <div class="col-lg-6 recipe-col">
-  <div class="recipe card fill-parent" data-name=<%= recipe.name.downcase %>>
+  <div class="recipe card fill-parent" data-name="<%= "#{recipe.name}" %>">
     <%= link_to "#{recipe.name}", recipe, class: 'header' %>
     <div class="row">
       <div class="col-lg-6">
