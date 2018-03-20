@@ -17,3 +17,15 @@
         }
     }
 }
+
+.account-detail {
+    background-color: $dark-grey-darken-1;
+    padding-bottom: 2rem;
+
+    .header {
+        padding: .5rem 0 .75rem 0;
+        font-weight: 300;
+        border: 1px solid $orange;
+        border-radius: 1rem 1rem 0 0;
+    }
+}

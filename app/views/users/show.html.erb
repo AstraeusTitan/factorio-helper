@@ -1,9 +1,45 @@
 <% provide :page_title, 'Account' %>
 
-<div class="row justify-content-center">
-  <div class="col-lg-6">
-    <h1>Account</h1>
-    <h4>Email:</h4>
-    <p><%= @user.email %></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card account-detail mt-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center header">Account</h1>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <h5 class="text-center">Email</h5>
+            <div class="d-flex justify-content-center">
+              <span><%= @user.email %></span>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <h5 class="text-center">Upload</h5>
+            <div class="d-flex justify-content-center">
+              <span class="d-block">Upload your own custom recipes</span>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+              <%= link_to 'Upload', upload_path, class: 'btn btn-outline-primary round' %>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <h5 class="text-center">Contact Me</h5>
+            <div class="d-flex justify-content-center">
+              <p>If you have any questions, comments, concerns, or feedback, I can be reached at:</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <span>factoriohelper@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
