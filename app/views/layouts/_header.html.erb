@@ -7,6 +7,9 @@
     <div class="collapse navbar-collapse" id="navbar-toggle-area">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <%= link_to 'Details', details_path, class: "nav-link #{ set_active_nav_item details_path }" %>
+        </li>
+        <li class="nav-item">
           <%= link_to 'Browse', browse_path, class: "nav-link #{ set_active_nav_item browse_path }" %>
         </li>
         <% if logged_in? %>
