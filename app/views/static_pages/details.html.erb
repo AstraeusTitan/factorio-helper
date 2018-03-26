@@ -11,10 +11,12 @@
         </div>
         <div class="row mt-5">
           <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-            <h4 class="text-center">File upload format</h4>
+            <h4 class="text-center">Custom Recipe Uploads</h4>
             <div class="d-flex justify-content-center mt-4">
-              <p>In order for the upload process to work, the file you chose to upload
-              must conform to the folowing format:</p>
+              <p>Factorio Helper lets you upload your own custom recipes, and lets you browse them the same way you browse the base game recipes. In order to do this, you must first create an account. Wfter creating an account, you can head to the upload page and upload your custom recipes.</p>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+              <p>Custom recipes must be in a JSON file that follows this format:</p>
             </div>
             <div class="d-flex justify-content-center mt-4">
               <pre>
@@ -45,14 +47,14 @@
           <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
             <h4 class="text-center">Data Exporter Mod</h4>
             <div class="d-flex justify-content-center mt-4">
-              <p>To make getting the recipe data from your game, use the Data Exporter mod. This mod adds the "/export" console command, which will generate a JSON file for you. This mod can be found on the Factorio mod portal, or you can download the mod here.</p>
+              <p>To make getting the recipe data from your game, use the Data Exporter mod. This mod adds the "/export" console command, which will generate a JSON file for you. This mod can be found on the Factorio mod portal.</p>
             </div>
             <div class="d-flex justify-content-center mt-2">
-              <%= link_to 'Download', mod_download_path, class: 'btn btn-outline-primary round mb-4' %>
+              <%= link_to 'Mod Portal', 'https://mods.factorio.com/mod/data-exporter', class: 'btn btn-outline-primary round mb-4' %>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-4">
           <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
             <h4 class="text-center">Support</h4>
             <div class="d-flex justify-content-center mt-4">
