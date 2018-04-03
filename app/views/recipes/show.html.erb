@@ -9,8 +9,11 @@
             <h1 class="text-center calc-header"><%= "#{@recipe.name}" %></h1>
           </div>
         </div>
-        <div class="row calc-display" id="want-display">
+        <div class="row calc-display">
           <%= render partial: 'calc', locals: { recipe: @recipe } %>
+        </div>
+        <div class="row used-in-display">
+          <%= render partial: 'used_in', locals: { recipe: @recipe } %>
         </div>
       </div>
     </div>

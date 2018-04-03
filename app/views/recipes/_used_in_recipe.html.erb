@@ -1,0 +1,8 @@
+<li class="list-group-item list-group-item-action d-flex justify-content-center mb-2" data-turbolinks="false">
+  <span>
+    <%= form_tag( browse_path ) do %>
+      <input type="hidden" name="query" value="<%= "#{recipe.name}" %>">
+      <%= submit_tag "#{recipe.name}", name: nil, class: 'btn btn-outline-primary round' %>
+    <% end %>
+  </span>
+</li>

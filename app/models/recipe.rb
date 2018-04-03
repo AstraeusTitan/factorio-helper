@@ -10,6 +10,7 @@ class Recipe < ApplicationRecord
   scope :modded, -> { where(modded: true) }
   scope :owned_by, -> (user) { where(user: user) }
   scope :browseable_for, -> (user) { base.or owned_by(user) }
+  scope :uses, -> (names) { joins(:ingredients).where({ ingredients: { input:true, name: names } }) }
 
   def inputs
     ingredients.select { |i| i.input? }

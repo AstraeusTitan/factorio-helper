@@ -10,6 +10,14 @@
     $("#base-recipes").addClass("d-none")
     $("#modded-recipes").removeClass("d-none")
 
+@show_base_used_in_recipes = () ->
+    $("#modded-used-in-recipes").addClass("d-none")
+    $("#base-used-in-recipes").removeClass("d-none")
+
+@show_modded_used_in_recipes = () ->
+    $("#base-used-in-recipes").addClass("d-none")
+    $("#modded-used-in-recipes").removeClass("d-none")
+
 filter_recipes = (filter) ->
     $(".recipe").parent().removeClass("d-none")
     if filter

@@ -1,0 +1,37 @@
+<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+  <div class="row">
+    <div class="col">
+      <h4 class="text-center">Used In</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <div class="btn-group btn-group-toggle recipe-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-secondary toggle active" onclick="show_base_used_in_recipes()">
+          <%= radio_button_tag 'recipe_type', 'base', true, class: 'form-check-input' %>Base
+        </label>
+        <label class="btn btn-outline-secondary toggle" onclick="show_modded_used_in_recipes()">
+          <%= radio_button_tag 'recipe_type', 'modded', true, class: 'form-check-input' %>Modded
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="base-used-in-recipes">
+    <div class="col">
+      <ul class="list-group">
+        <%= render partial: 'used_in_recipe', collection: @base_used_in_recipes, as: :recipe %>
+      </ul>
+    </div>
+  </div>
+  <div class="row d-none" id="modded-used-in-recipes">
+    <div class="col">
+      <ul class="list-group">
+        <%= render partial: 'used_in_recipe', collection: @modded_used_in_recipes, as: :recipe %>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
