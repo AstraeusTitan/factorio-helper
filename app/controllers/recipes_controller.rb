@@ -10,7 +10,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find params[ :id ]
     outputs = @recipe.ingredients.where(input: false).pluck(:name)
     @base_used_in_recipes = Recipe.uses(outputs).base
-    @modded_used_in_recipes = Recipe.uses(outputs).modded
+    @modded_used_in_recipes = Recipe.owned_by(current_user).uses(outputs).modded
   end
 
   def upload
